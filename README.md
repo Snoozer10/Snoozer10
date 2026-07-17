@@ -4,18 +4,6 @@
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&duration=4000&pause=1000&color=00FF41&center=true&vCenter=true&width=650&lines=Don't%20Learn%20The%20Hard%20Way%2C%20Learn%20The%20Stupid%20Way" alt="Typing introduction" />
 </p>
 
-<p align="center">
-  <a href="https://komarev.com/ghpvc/?username=Snoozer10">
-    <img src="https://komarev.com/ghpvc/?username=Snoozer10&label=Profile%20views&color=00FFFF&style=flat-square" alt="Snoozer10's profile views" />
-  </a>
-</p>
-
-<img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZGxlbG5ldmF2MDBpeWhpdmllaGI4bnQ0aXd2aHlwdW81d3JtbnAzdiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/ZVik7pBtu9dNS/giphy.gif" alt="Banner" width="100%" />
-
-## 📌 About Me
-- I'm currently learning
-
-
 <div data-importer="techs" align="center">
   <img src="https://skillicons.dev/icons?i=py" height="60" alt="python logo"  />
   <img width="12" />
@@ -33,6 +21,9 @@
   <img width="12" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" height="60" alt="vscode logo"  />
 </div>
+
+## 📌 About Me
+- I'm currently learning
 
 ###
 
