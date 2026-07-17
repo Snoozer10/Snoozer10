@@ -1,4 +1,4 @@
-![Terminal GIF](https://raw.githubusercontent.com/YOUR_USERNAME/gif-terminal/main/output.gif)
+![Terminal GIF](https://raw.githubusercontent.com/Snoozer10/gif-terminal/main/output.gif)
 
 ###
 
