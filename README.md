@@ -1,3 +1,14 @@
+<div data-importer="socials" align="center">
+  <a href="https://www.linkedin.com/in/hesham-alsoufi-b528b2259/" target="_blank">
+    <img src="https://img.shields.io/static/v1?message=LinkedIn&logo=linkedin&label=&color=0077B5&logoColor=white&labelColor=&style=for-the-badge" height="25" alt="linkedin logo"  />
+  </a>
+  <a href="https://discord.com/channels/@snoozeranime" target="_blank">
+    <img src="https://img.shields.io/static/v1?message=Discord&logo=discord&label=&color=7289DA&logoColor=white&labelColor=&style=for-the-badge" height="25" alt="discord logo"  />
+  </a>
+</div>
+
+###
+
 <img src="https://capsule-render.vercel.app/api?type=waving&height=200&color=gradient&customColorList=6,11,20,29&text=Hesham%20Alsoufi&fontSize=48&fontColor=fff&animation=twinkling&fontAlignY=35&desc=International%20Business%20Management%20&descSize=18&descAlignY=55&textBg=false"/>
 
 <p align="center">
@@ -24,17 +35,6 @@
 
 ## 📌 About Me
 - I'm currently learning
-
-###
-
-<div data-importer="socials" align="center">
-  <a href="https://www.linkedin.com/in/hesham-alsoufi-b528b2259/" target="_blank">
-    <img src="https://img.shields.io/static/v1?message=LinkedIn&logo=linkedin&label=&color=0077B5&logoColor=white&labelColor=&style=for-the-badge" height="25" alt="linkedin logo"  />
-  </a>
-  <a href="https://discord.com/channels/@snoozeranime" target="_blank">
-    <img src="https://img.shields.io/static/v1?message=Discord&logo=discord&label=&color=7289DA&logoColor=white&labelColor=&style=for-the-badge" height="25" alt="discord logo"  />
-  </a>
-</div>
 
 ###
 
