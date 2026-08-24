@@ -1,80 +1,197 @@
-![Static Badge](https://img.shields.io/badge/noob-vibe_coding-blue)
+<div align="center">
 
-<div data-importer="socials" align="center" style="margin: 20px 0;">
-  <a href="https://www.linkedin.com/in/hesham-alsoufi-b528b2259/" target="_blank" style="margin: 0 10px;">
-    <img src="https://img.shields.io/static/v1?message=LinkedIn&logo=linkedin&label=&color=0077B5&logoColor=white&labelColor=&style=for-the-badge" height="25" alt="linkedin logo"  />
-  </a>
-  <a href="https://discord.com/channels/@snoozeranime" target="_blank" style="margin: 0 10px;">
-    <img src="https://img.shields.io/static/v1?message=Discord&logo=discord&label=&color=7289DA&logoColor=white&labelColor=&style=for-the-badge" height="25" alt="discord logo"  />
-  </a>
-</div>
+<!-- Hero Masthead -->
+<img src="https://capsule-render.vercel.app/api?type=waving&height=220&color=gradient&customColorList=6,11,20,29&text=Hesham%20Alsoufi&fontSize=48&fontColor=fff&animation=twinkling&fontAlignY=35&desc=International%20Business%20Management%20%7C%20Full-Stack%20Cloud%20Architect&descSize=17&descAlignY=55&textBg=false" width="100%" alt="Hesham Alsoufi Header Banner" />
 
----
-
-<img src="https://capsule-render.vercel.app/api?type=waving&height=200&color=gradient&customColorList=6,11,20,29&text=Hesham%20Alsoufi&fontSize=48&fontColor=fff&animation=twinkling&fontAlignY=35&desc=International%20Business%20Management%20&descSize=18&descAlignY=55&textBg=false"/>
+<!-- Dynamic Role & Value Proposition Typing SVG -->
+<a href="https://github.com/Snoozer10">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&duration=3500&pause=1200&color=00FF41&center=true&vCenter=true&width=550&lines=Building+Scalable+Cloud+Architectures;Bridging+Business+Strategy+%26+Software;Full-Stack+Engineer+%26+Tech+Innovator;Designing+High-Performance+Web+Systems" alt="Hesham Alsoufi Dynamic Typing Introduction" />
+</a>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&duration=4000&pause=1000&color=00FF41&center=true&vCenter=true&width=650&lines=Don't%20Learn%20The%20Hard%20Way%2C%20Learn%20The%20Stupid%20Way" alt="Typing introduction" />
+  <a href="https://www.linkedin.com/in/hesham-alsoufi-b528b2259/" target="_blank">
+    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge" />
+  </a>
+  <a href="https://discord.com/channels/@snoozeranime" target="_blank">
+    <img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord Badge" />
+  </a>
+  <a href="mailto:hishamahakim00@gmail.com" target="_blank">
+    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email Badge" />
+  </a>
+  <a href="https://github.com/Snoozer10?tab=repositories" target="_blank">
+    <img src="https://img.shields.io/badge/Repositories-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Repositories Badge" />
+  </a>
 </p>
 
-<div data-importer="techs" align="center" style="margin: 20px 0; font-size: 0.9em;">
-  <div style="display: flex; justify-content: center; gap: 15px; flex-wrap: wrap;">
-    <div style="text-align: center;">
-      <span style="font-weight: bold;">Languages</span><br/>
-      <img src="https://skillicons.dev/icons?i=py" height="30" alt="python logo" />
-      <img width="4" />
-      <img src="https://skillicons.dev/icons?i=js" height="30" alt="javascript logo" />
-      <img width="4" />
-      <img src="https://skillicons.dev/icons?i=ts" height="30" alt="typescript logo" />
-    </div>
-    <div style="text-align: center;">
-      <span style="font-weight: bold;">Frameworks</span><br/>
-      <img width="4" />
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" height="30" alt="react logo" />
-      <img width="4" />
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vue/vue-original.svg" height="30" alt="vue logo" />
-      <img width="4" />
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/next/next-original.svg" height="30" alt="next logo" />
-    </div>
-    <div style="text-align: center;">
-      <span style="font-weight: bold;">Tools</span><br/>
-      <img width="4" />
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/aftereffects/aftereffects-original.svg" height="30" alt="aftereffects logo" />
-      <img width="4" />
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/notion/notion-original.svg" height="30" alt="notion logo" />
-      <img width="4" />
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" height="30" alt="vscode logo" />
-    </div>
-    <div style="text-align: center;">
-      <span style="font-weight: bold;">Cloud</span><br/>
-      <img width="4" />
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg" height="30" alt="googlecloud logo" />
-      <img width="4" />
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/aws/aws-original-wordmark.svg" height="30" alt="aws logo" />
-    </div>
-  </div>
 </div>
 
 ---
 
-## 🌟 Hesham Alsoufi | International Business Management & Tech Innovator
+### 👨‍💻 Executive Summary & Core Focus
+
+```yaml
+specialization: "Full-Stack Development & Enterprise Cloud Architecture"
+domain_expertise: "International Business Management & Digital Transformation"
+current_focus: "Architecting resilient distributed systems & high-throughput web apps"
+collaboration: "Open-source architectures, business workflow automation, AI integration"
+```
+
+- 🔭 **Architecting**: Modern microservices, reactive frontend architectures, and automated cloud workflows.
+- 💼 **Strategy**: Leveraging International Business Management principles to deliver high-ROI technical software solutions.
+- ⚡ **Philosophy**: High reliability, deterministic CI/CD automation, and clean component-driven design.
+- 📫 **Direct Reach**: Connect on [LinkedIn](https://www.linkedin.com/in/hesham-alsoufi-b528b2259/) or drop an email to [hishamahakim00@gmail.com](mailto:hishamahakim00@gmail.com).
+
+---
+
+### 🛠️ Technical Taxonomy & Toolchain
+
 <div align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&duration=4000&pause=1000&color=00FF41&center=true&vCenter=true&width=650&lines=Full Stack Developer & Digital Transformation Expert" alt="Typing introduction" />
+
+<table>
+  <thead>
+    <tr>
+      <th width="25%" align="center"><b>Core Languages</b></th>
+      <th width="25%" align="center"><b>Frontend & UI</b></th>
+      <th width="25%" align="center"><b>Cloud & DevOps</b></th>
+      <th width="25%" align="center"><b>Tooling & Design</b></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td align="center" valign="top">
+        <a href="https://skillicons.dev">
+          <img src="https://skillicons.dev/icons?i=py,js,ts,bash" alt="Python, JavaScript, TypeScript, Bash" /><br/>
+          <sub><b>Python • JS • TS • Bash</b></sub>
+        </a>
+      </td>
+      <td align="center" valign="top">
+        <a href="https://skillicons.dev">
+          <img src="https://skillicons.dev/icons?i=react,next,vue,tailwind" alt="React, Next.js, Vue, Tailwind" /><br/>
+          <sub><b>React • Next.js • Vue • Tailwind</b></sub>
+        </a>
+      </td>
+      <td align="center" valign="top">
+        <a href="https://skillicons.dev">
+          <img src="https://skillicons.dev/icons?i=gcp,aws,docker,githubactions" alt="GCP, AWS, Docker, GitHub Actions" /><br/>
+          <sub><b>GCP • AWS • Docker • Actions</b></sub>
+        </a>
+      </td>
+      <td align="center" valign="top">
+        <a href="https://skillicons.dev">
+          <img src="https://skillicons.dev/icons?i=vscode,notion,ae,figma" alt="VS Code, Notion, After Effects, Figma" /><br/>
+          <sub><b>VS Code • Notion • AE • Figma</b></sub>
+        </a>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+</div>
+
+---
+
+### 🚀 Proof of Competency & Featured Architectures
+
+<div align="center">
+
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <h4 align="center">🌐 Enterprise Cloud & Business Automation</h4>
+      <p align="center">
+        <img src="https://img.shields.io/badge/Architecture-Distributed-blue?style=flat-square" alt="Distributed Architecture Badge" />
+        <img src="https://img.shields.io/badge/GCP-Cloud_Native-orange?style=flat-square" alt="GCP Cloud Native Badge" />
+      </p>
+      <p>Custom infrastructure orchestration and workflow optimization bridging strategic business metrics with automated cloud deployments.</p>
+      <ul>
+        <li><b>Tech Stack</b>: Python, GCP, Docker, GitHub Actions</li>
+        <li><b>Capabilities</b>: Zero-downtime CI/CD, asynchronous job queuing, metrics tracking</li>
+      </ul>
+    </td>
+    <td width="50%" valign="top">
+      <h4 align="center">⚡ High-Performance Reactive Web Suite</h4>
+      <p align="center">
+        <img src="https://img.shields.io/badge/Frontend-Next.js_14-black?style=flat-square" alt="Next.js Badge" />
+        <img src="https://img.shields.io/badge/UI-Tailwind_CSS-38B2AC?style=flat-square" alt="Tailwind CSS Badge" />
+      </p>
+      <p>Ultra-responsive, accessible user interfaces built with modular component hierarchies and server-side rendering for optimal Core Web Vitals.</p>
+      <ul>
+        <li><b>Tech Stack</b>: Next.js, React, TypeScript, Tailwind</li>
+        <li><b>Capabilities</b>: Dynamic SSR/SSG, WCAG 2.1 compliance, state hydration</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+
+</div>
+
+---
+
+### 📊 Dynamic Metrics & Engineering Activity
+
+<div align="center">
+
+<!-- Dual-Column Dynamic Stats View -->
+<table>
+  <tr>
+    <td align="center" width="50%" valign="middle">
+      <a href="https://github.com/Snoozer10">
+        <img src="https://streak-stats.demolab.com?user=Snoozer10&locale=en&mode=daily&theme=dracula&hide_border=false&border_radius=10&order=3" width="100%" alt="GitHub Streak Stats Graph" />
+      </a>
+    </td>
+    <td align="center" width="50%" valign="middle">
+      <a href="https://github.com/Snoozer10">
+        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Snoozer10&layout=compact&theme=dracula&hide_border=false&border_radius=10" width="100%" alt="Top Languages Card" />
+      </a>
+    </td>
+  </tr>
+</table>
+
+<!-- Self-Updating Activity Graph generated via GitHub Actions -->
+<a href="https://github.com/Snoozer10">
+  <img src="https://raw.githubusercontent.com/Snoozer10/Snoozer10/activity-graph-output/activity-graph.svg" width="100%" alt="Dynamic Activity Graph Output" />
+</a>
+
+<!-- Pacman Contribution Arcade Animation -->
+<details>
+  <summary><b>🕹️ Click to view Pacman Interactive Contribution Arcade</b></summary>
   <br/>
-  <span style="font-size: 1.2em; color: #666;">Building scalable solutions & sharing knowledge with the developer community</span>
+  <div align="center">
+    <img src="https://raw.githubusercontent.com/Snoozer10/Snoozer10/pacman-output/pacman-contribution-graph.svg" width="100%" alt="Pacman Contribution Animation" />
+  </div>
+</details>
+
 </div>
 
 ---
 
-<div data-importer="stats" align="center">
-  <img src="https://streak-stats.demolab.com?user=Snoozer10&locale=en&mode=daily&theme=dracula&hide_border=false&border_radius=5&order=3" height="150" alt="streak graph"  />
-  <img src="https://raw.githubusercontent.com/Snoozer10/Snoozer10/activity-graph-output/activity-graph.svg?radius=16&theme=dracula&area=true&order=5" height="300" alt="activity-graph graph"  />
+### 🤝 Connect & Collaborate
+
+<div align="center">
+
+<p>
+  Whether discussing scalable software architecture, business innovation, or open-source initiatives:
+</p>
+
+<a href="https://www.linkedin.com/in/hesham-alsoufi-b528b2259/" target="_blank">
+  <img src="https://img.shields.io/badge/LinkedIn-Hesham_Alsoufi-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Contact Badge" />
+</a>
+&nbsp;
+<a href="https://discord.com/channels/@snoozeranime" target="_blank">
+  <img src="https://img.shields.io/badge/Discord-snoozeranime-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord Contact Badge" />
+</a>
+&nbsp;
+<a href="mailto:hishamahakim00@gmail.com" target="_blank">
+  <img src="https://img.shields.io/badge/Gmail-Direct_Message-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail Contact Badge" />
+</a>
+
+<br/><br/>
+
+<!-- Footer Anchor -->
+<img src="https://capsule-render.vercel.app/api?type=waving&height=110&section=footer&reversal=false&fontSize=70&fontColor=FFFFFF&fontAlign=50&fontAlignY=50&stroke=-&descSize=20&descAlign=50&descAlignY=50&theme=cobalt" width="100%" alt="Footer Decorative Wave" />
+
+<p align="center">
+  <sub>Designed with precision • Powered by GitHub Actions & Automated SVG Pipelines • © 2026 Hesham Alsoufi</sub>
+</p>
+
 </div>
-
----
-
-<div data-importer="border">
-  <img style="100%" src="https://capsule-render.vercel.app/api?type=waving&height=100&section=footer&reversal=false&fontSize=70&fontColor=FFFFFF&fontAlign=50&fontAlignY=50&stroke=-&descSize=20&descAlign=50&descAlignY=50&theme=cobalt"  />
-</div>
-
-###
