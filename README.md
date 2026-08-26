@@ -1,6 +1,6 @@
 <div align="center">
 
-<!-- Hero Masthead -->
+<!-- Hero Masthead — Premium Executive Cobalt -->
 <img src="https://capsule-render.vercel.app/api?type=waving&height=220&color=gradient&customColorList=6,11,20,29&text=Hesham%20Alsoufi&fontSize=48&fontColor=fff&animation=twinkling&fontAlignY=35&desc=International%20Business%20Management%20%7C%20Full-Stack%20Cloud%20Architect&descSize=17&descAlignY=55&textBg=false" width="100%" alt="Hesham Alsoufi Header Banner" />
 
 <!-- Dynamic Role & Value Proposition Typing SVG -->
@@ -20,6 +20,9 @@
   </a>
   <a href="https://github.com/Snoozer10?tab=repositories" target="_blank">
     <img src="https://img.shields.io/badge/Repositories-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Repositories Badge" />
+  </a>
+  <a href="https://github.com/sponsors/Snoozer10" target="_blank">
+    <img src="https://img.shields.io/badge/Sponsor-EA4AAA?style=for-the-badge&logo=githubsponsors&logoColor=white" alt="Sponsor Badge" />
   </a>
 </p>
 
