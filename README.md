@@ -21,9 +21,6 @@
   <a href="https://github.com/Snoozer10?tab=repositories" target="_blank">
     <img src="https://img.shields.io/badge/Repositories-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Repositories Badge" />
   </a>
-  <a href="https://github.com/sponsors/Snoozer10" target="_blank">
-    <img src="https://img.shields.io/badge/Sponsor-EA4AAA?style=for-the-badge&logo=githubsponsors&logoColor=white" alt="Sponsor Badge" />
-  </a>
 </p>
 
 </div>
@@ -253,7 +250,6 @@ collaboration: "Open-source architectures, business workflow automation, AI inte
 
 <p align="center">
   <img src="https://img.shields.io/badge/Available%20for%20Hire-00C853?style=for-the-badge&logo=handshake&logoColor=white" alt="Hireable" />
-  <a href="https://github.com/sponsors/Snoozer10"><img src="https://img.shields.io/badge/Sponsor-EA4AAA?style=for-the-badge&logo=githubsponsors&logoColor=white" alt="Sponsor" /></a>
 </p>
 
 <!-- Footer Anchor -->
