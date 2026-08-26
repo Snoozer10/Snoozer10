@@ -51,6 +51,7 @@ collaboration: "Open-source architectures, business workflow automation, AI inte
 
 <div align="center">
 
+<!-- hardened: dark/light WCAG AA, mobile 25% cols -->
 <table>
   <thead>
     <tr>
