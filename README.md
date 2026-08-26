@@ -166,10 +166,10 @@ collaboration: "Open-source architectures, business workflow automation, AI inte
         <img src="https://img.shields.io/badge/Architecture-Distributed-blue?style=flat-square" alt="Distributed Architecture Badge" />
         <img src="https://img.shields.io/badge/GCP-Cloud_Native-orange?style=flat-square" alt="GCP Cloud Native Badge" />
       </p>
-      <p>Custom infrastructure orchestration and workflow optimization bridging strategic business metrics with automated cloud deployments.</p>
+      <p>Custom infrastructure orchestration and workflow optimization bridging strategic business metrics with automated cloud deployments — proven ROI in scale & reliability.</p>
       <ul>
         <li><b>Tech Stack</b>: Python, GCP, Docker, GitHub Actions</li>
-        <li><b>Capabilities</b>: Zero-downtime CI/CD, asynchronous job queuing, metrics tracking</li>
+        <li><b>Capabilities</b>: Zero-downtime CI/CD (from 98% error-free ops), SEO-driven growth (doubled rankings + 40% traffic lift), 150% e-commerce scale (POD automation)</li>
       </ul>
     </td>
     <td width="50%" valign="top">
@@ -178,10 +178,10 @@ collaboration: "Open-source architectures, business workflow automation, AI inte
         <img src="https://img.shields.io/badge/Frontend-Next.js_14-black?style=flat-square" alt="Next.js Badge" />
         <img src="https://img.shields.io/badge/UI-Tailwind_CSS-38B2AC?style=flat-square" alt="Tailwind CSS Badge" />
       </p>
-      <p>Ultra-responsive, accessible user interfaces built with modular component hierarchies and server-side rendering for optimal Core Web Vitals.</p>
+      <p>Ultra-responsive, accessible user interfaces built with modular component hierarchies and server-side rendering for optimal Core Web Vitals — 8k → 300k visitors via content systems.</p>
       <ul>
         <li><b>Tech Stack</b>: Next.js, React, TypeScript, Tailwind</li>
-        <li><b>Capabilities</b>: Dynamic SSR/SSG, WCAG 2.1 compliance, state hydration</li>
+        <li><b>Capabilities</b>: Dynamic SSR/SSG, WCAG 2.1 compliance, state hydration, SEO-optimized performance</li>
       </ul>
     </td>
   </tr>
@@ -251,11 +251,14 @@ collaboration: "Open-source architectures, business workflow automation, AI inte
 
 <br/><br/>
 
+<p align="center">
+  <img src="https://img.shields.io/badge/Available%20for%20Hire-00C853?style=for-the-badge&logo=handshake&logoColor=white" alt="Hireable" />
+  <a href="https://github.com/sponsors/Snoozer10"><img src="https://img.shields.io/badge/Sponsor-EA4AAA?style=for-the-badge&logo=githubsponsors&logoColor=white" alt="Sponsor" /></a>
+</p>
+
 <!-- Footer Anchor -->
 <img src="https://capsule-render.vercel.app/api?type=waving&height=110&section=footer&reversal=false&fontSize=70&fontColor=FFFFFF&fontAlign=50&fontAlignY=50&stroke=-&descSize=20&descAlign=50&descAlignY=50&theme=cobalt" width="100%" alt="Footer Decorative Wave" />
 
-<p align="center">
-  <sub>Designed with precision • Powered by GitHub Actions & Automated SVG Pipelines • © 2026 Hesham Alsoufi</sub>
-</p>
+<p align="center"><sub>Designed with precision • Powered by GitHub Actions & Automated SVG Pipelines • © 2026 Hesham Alsoufi</sub></p>
 
 </div>
