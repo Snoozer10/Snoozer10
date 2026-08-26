@@ -27,7 +27,7 @@ jobs:
         uses: actions/checkout@v4.1.7
 
       - name: Generate Activity Graph
-        uses: maurodesouza/github-readme-activity-graph-action@v2
+        uses: maurodesouza/github-readme-activity-graph-action@v1
         with:
           username: ${{ github.repository_owner }}
           options: radius=16&theme=dracula&area=true&order=5&hide_border=false&border_radius=12
