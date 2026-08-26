@@ -39,10 +39,11 @@ current_focus: "Architecting resilient distributed systems & high-throughput web
 collaboration: "Open-source architectures, business workflow automation, AI integration"
 ```
 
-- 🔭 **Architecting**: Modern microservices, reactive frontend architectures, and automated cloud workflows.
-- 💼 **Strategy**: Leveraging International Business Management principles to deliver high-ROI technical software solutions.
-- ⚡ **Philosophy**: High reliability, deterministic CI/CD automation, and clean component-driven design.
-- 📫 **Direct Reach**: Connect on [LinkedIn](https://www.linkedin.com/in/hesham-alsoufi-b528b2259/) or drop an email to [hishamahakim00@gmail.com](mailto:hishamahakim00@gmail.com).
+- 🚀 **Growth Engine**: Launched POD platform (Shopify + Printful) **150% sales in 6 months**; healthcare blogger site **8k → 300k monthly visitors** via content systems.
+- 📈 **Scale & Reach**: **Doubled organic rankings**, **40% traffic lift**, **50+ blog posts** published, robust SEO + analytics driving measurable ROI.
+- ⚙️ **Ops Excellence**: **98% error-free database** (YLDF), e-wallet banking ops, cross-functional team leadership — now applied to **zero-downtime CI/CD & cloud workflows**.
+- 🎓 **Foundation**: Bachelor International Business Administration — International University of Technology Twintech (2018-2021) | YLDF Leadership
+- 📫 **Direct Reach**: Connect on [LinkedIn](https://www.linkedin.com/in/hesham-alsoufi-b528b2259/) or [hishamahakim00@gmail.com](mailto:hishamahakim00@gmail.com) — open to collabs & hireable.
 
 ---
 
