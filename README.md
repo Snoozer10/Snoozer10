@@ -120,6 +120,40 @@ collaboration: "Open-source architectures, business workflow automation, AI inte
 
 ---
 
+### 🏆 Open-Source Impact Wall
+
+<div align="center">
+
+<!-- Trophy Wall -->
+<img src="https://github-profile-trophy.vercel.app/?username=Snoozer10&theme=dracula&column=7&no-frame=false&no-bg=false&margin-w=4" width="100%" alt="Trophy Wall" />
+
+<table>
+  <tr>
+    <td align="center" width="50%">
+      <img src="https://streak-stats.demolab.com?user=Snoozer10&locale=en&mode=daily&theme=dracula&hide_border=false&border_radius=10&order=3" width="100%" alt="Streak" />
+    </td>
+    <td align="center" width="50%">
+      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Snoozer10&layout=compact&theme=dracula&hide_border=false&border_radius=10" width="100%" alt="Top Langs" />
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="50%">
+      <img src="https://github-readme-stats.vercel.app/api/wakatime?username=Snoozer10&theme=dracula&hide_border=false&border_radius=10&layout=compact" width="100%" alt="Waka Time" />
+    </td>
+    <td align="center" width="50%">
+      <img src="https://komarev.com/ghpvc/?username=Snoozer10&label=Profile%20views&color=0e75b6&style=flat" alt="Visitor Counter" /><br/>
+      <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Snoozer10&theme=dracula" width="100%" alt="Profile Details" />
+    </td>
+  </tr>
+</table>
+
+<!-- 3D Contribution -->
+<img src="https://raw.githubusercontent.com/Snoozer10/Snoozer10/3d-profile/profile-green-animate.svg" width="100%" alt="3D Contribution Graph" onerror="this.style.display='none'" />
+
+</div>
+
+---
+
 ### 🚀 Proof of Competency & Featured Architectures
 
 <div align="center">
