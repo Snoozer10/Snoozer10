@@ -144,9 +144,6 @@ collaboration: "Open-source architectures, business workflow automation, AI inte
   </tr>
 </table>
 
-<!-- 3D Contribution -->
-<img src="https://raw.githubusercontent.com/Snoozer10/Snoozer10/3d-profile/profile-green-animate.svg" width="100%" alt="3D Contribution Graph" onerror="this.style.display='none'" />
-
 </div>
 
 ---
