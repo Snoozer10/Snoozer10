@@ -114,20 +114,6 @@ collaboration: "Open-source architectures, business workflow automation, AI inte
       <p><img src="https://img.shields.io/github/stars/Snoozer10/Snoozer10?style=flat-square&logo=github" alt="stars" /> <img src="https://img.shields.io/github/forks/Snoozer10/Snoozer10?style=flat-square" alt="forks" /></p>
     </td>
   </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <a href="https://github.com/Snoozer10/gcp-cloud-architect">
-        <img src="https://github-readme-stats.vercel.app/api/pin/?username=Snoozer10&repo=gcp-cloud-architect&theme=dracula&hide_border=false&border_radius=10" width="100%" alt="gcp-cloud-architect pin" />
-      </a>
-      <p><img src="https://img.shields.io/github/stars/Snoozer10/gcp-cloud-architect?style=flat-square&logo=github" alt="stars" /> <img src="https://img.shields.io/github/forks/Snoozer10/gcp-cloud-architect?style=flat-square" alt="forks" /></p>
-    </td>
-    <td width="50%" valign="top">
-      <a href="https://github.com/Snoozer10/nextjs-tailwind-growth">
-        <img src="https://github-readme-stats.vercel.app/api/pin/?username=Snoozer10&repo=nextjs-tailwind-growth&theme=dracula&hide_border=false&border_radius=10" width="100%" alt="nextjs-tailwind-growth pin" />
-      </a>
-      <p><img src="https://img.shields.io/github/stars/Snoozer10/nextjs-tailwind-growth?style=flat-square&logo=github" alt="stars" /> <img src="https://img.shields.io/github/forks/Snoozer10/nextjs-tailwind-growth?style=flat-square" alt="forks" /></p>
-    </td>
-  </tr>
 </table>
 
 </div>
