@@ -1,0 +1,41 @@
+name: Generate WakaTime Stats
+
+on:
+  schedule:
+    - cron: "0 */12 * * *" # Every 12 hours at minute 0
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - '.github/workflows/wakatime.yml'
+
+concurrency:
+  group: wakatime-stats-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  generate:
+    name: Generate & Deploy WakaTime Stats
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4.1.7
+
+      - name: Fetch WakaTime Stats SVG
+        run: |
+          mkdir -p dist
+          curl -s -f "https://github-stats-extended.vercel.app/api/wakatime?username=d91d6d39-3301-412a-beb1-7809725e88f4&theme=dracula&hide_border=false&border_radius=10&layout=compact" -o dist/wakatime.svg
+
+      - name: Push wakatime.svg to output branch
+        uses: crazy-max/ghaction-github-pages@v4.0.0
+        with:
+          target_branch: wakatime-output
+          build_dir: dist
+          commit_message: "chore(ci): update dynamic wakatime stats SVG [skip ci]"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

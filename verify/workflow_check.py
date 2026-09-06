@@ -1,5 +1,5 @@
 import yaml
-for path in [".github/workflows/activity-graph.yml", ".github/workflows/arcade.yml"]:
+for path in [".github/workflows/activity-graph.yml", ".github/workflows/arcade.yml", ".github/workflows/wakatime.yml"]:
     with open(path) as f:
         y = yaml.safe_load(f)
     assert "concurrency" in y, f"missing concurrency {path}"

@@ -135,7 +135,7 @@ collaboration: "Open-source architectures, business workflow automation, AI inte
   </tr>
   <tr>
     <td align="center" width="50%">
-      <img src="https://github-readme-stats.vercel.app/api/wakatime?username=Snoozer10&theme=dracula&hide_border=false&border_radius=10&layout=compact" width="100%" alt="Waka Time" />
+      <img src="https://raw.githubusercontent.com/Snoozer10/Snoozer10/wakatime-output/wakatime.svg" width="100%" alt="Waka Time" />
     </td>
     <td align="center" width="50%">
       <img src="https://komarev.com/ghpvc/?username=Snoozer10&label=Profile%20views&color=0e75b6&style=flat" alt="Visitor Counter" /><br/>
