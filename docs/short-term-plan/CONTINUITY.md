@@ -1,0 +1,34 @@
+# Continuity Ledger
+
+- Goal (incl. success criteria): Execute approved profile enhancements, migrate to resilient vercel endpoints, deduplicate metrics, track QA suite and DOX contracts in git.
+- Constraints/Assumptions:
+  - Do not commit secrets/tokens (Rule 15).
+  - Keep .serena and scratch files untracked.
+  - Comply with DOX framework (AGENTS.md) and run verify suite with 0 errors.
+  - Fail-open and preserve Dracula / Executive Cobalt Arcade design.
+- Key decisions:
+  - Updated Featured Repos pins to use `https://github-stats-extended.vercel.app/api/pin/`.
+  - Removed broken Trophy Wall from `Open-Source Impact Wall`.
+  - Updated Top Langs image source to `https://github-stats-extended.vercel.app/api/top-langs/`.
+  - Deduplicated Dynamic Metrics section: removed the redundant dual-column table of streak and top languages, keeping the dynamic activity graph and Pacman arcade.
+  - Updated `verify/impact_check.py` to remove `trophy` assert.
+  - Updated `verify/pinned_check.py` to allow `github-stats-extended.vercel.app/api/pin` and `pin/?username=Snoozer10`.
+  - Ran all 8 Python verification checks + `designmd lint DESIGN.md` (all 0 errors / OK).
+  - Tracked QA suite files, AGENTS.md, DESIGN.md, and CONTINUITY.md in git.
+- State:
+  - Done: README edits, verification scripts updated, all checks passed, files staged.
+  - Now: Commit and push to origin/main.
+  - Next: Report back commit hash and verification results.
+- Open questions:
+  - None.
+- Working set:
+  - README.md
+  - verify/impact_check.py
+  - verify/pinned_check.py
+  - AGENTS.md
+  - DESIGN.md
+  - verify/AGENTS.md
+  - verify/design_check.py
+  - verify/summary_check.py
+  - verify/taxonomy_check.py
+  - docs/short-term-plan/CONTINUITY.md

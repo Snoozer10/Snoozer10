@@ -100,13 +100,13 @@ collaboration: "Open-source architectures, business workflow automation, AI inte
   <tr>
     <td width="50%" valign="top">
       <a href="https://github.com/Snoozer10/local-youtube-automation">
-        <img src="https://github-readme-stats.vercel.app/api/pin/?username=Snoozer10&repo=local-youtube-automation&theme=dracula&hide_border=false&border_radius=10" width="100%" alt="local-youtube-automation pin" />
+        <img src="https://github-stats-extended.vercel.app/api/pin/?username=Snoozer10&repo=local-youtube-automation&theme=dracula&hide_border=false&border_radius=10" width="100%" alt="local-youtube-automation pin" />
       </a>
       <p><img src="https://img.shields.io/github/stars/Snoozer10/local-youtube-automation?style=flat-square&logo=github" alt="stars" /> <img src="https://img.shields.io/github/forks/Snoozer10/local-youtube-automation?style=flat-square" alt="forks" /></p>
     </td>
     <td width="50%" valign="top">
       <a href="https://github.com/Snoozer10/Snoozer10">
-        <img src="https://github-readme-stats.vercel.app/api/pin/?username=Snoozer10&repo=Snoozer10&theme=dracula&hide_border=false&border_radius=10" width="100%" alt="Snoozer10 pin" />
+        <img src="https://github-stats-extended.vercel.app/api/pin/?username=Snoozer10&repo=Snoozer10&theme=dracula&hide_border=false&border_radius=10" width="100%" alt="Snoozer10 pin" />
       </a>
       <p><img src="https://img.shields.io/github/stars/Snoozer10/Snoozer10?style=flat-square&logo=github" alt="stars" /> <img src="https://img.shields.io/github/forks/Snoozer10/Snoozer10?style=flat-square" alt="forks" /></p>
     </td>
@@ -121,16 +121,13 @@ collaboration: "Open-source architectures, business workflow automation, AI inte
 
 <div align="center">
 
-<!-- Trophy Wall -->
-<img src="https://github-profile-trophy.vercel.app/?username=Snoozer10&theme=dracula&column=7&no-frame=false&no-bg=false&margin-w=4" width="100%" alt="Trophy Wall" />
-
 <table>
   <tr>
     <td align="center" width="50%">
       <img src="https://streak-stats.demolab.com?user=Snoozer10&locale=en&mode=daily&theme=dracula&hide_border=false&border_radius=10&order=3" width="100%" alt="Streak" />
     </td>
     <td align="center" width="50%">
-      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Snoozer10&layout=compact&theme=dracula&hide_border=false&border_radius=10" width="100%" alt="Top Langs" />
+      <img src="https://github-stats-extended.vercel.app/api/top-langs/?username=Snoozer10&layout=compact&theme=dracula&hide_border=false&border_radius=10" width="100%" alt="Top Langs" />
     </td>
   </tr>
   <tr>
@@ -188,22 +185,6 @@ collaboration: "Open-source architectures, business workflow automation, AI inte
 ### 📊 Dynamic Metrics & Engineering Activity
 
 <div align="center">
-
-<!-- Dual-Column Dynamic Stats View -->
-<table>
-  <tr>
-    <td align="center" width="50%" valign="middle">
-      <a href="https://github.com/Snoozer10">
-        <img src="https://streak-stats.demolab.com?user=Snoozer10&locale=en&mode=daily&theme=dracula&hide_border=false&border_radius=10&order=3" width="100%" alt="GitHub Streak Stats Graph" />
-      </a>
-    </td>
-    <td align="center" width="50%" valign="middle">
-      <a href="https://github.com/Snoozer10">
-        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Snoozer10&layout=compact&theme=dracula&hide_border=false&border_radius=10" width="100%" alt="Top Languages Card" />
-      </a>
-    </td>
-  </tr>
-</table>
 
 <!-- Self-Updating Activity Graph generated via GitHub Actions -->
 <a href="https://github.com/Snoozer10">
