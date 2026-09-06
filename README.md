@@ -102,13 +102,27 @@ collaboration: "Open-source architectures, business workflow automation, AI inte
       <a href="https://github.com/Snoozer10/local-youtube-automation">
         <img src="https://github-stats-extended.vercel.app/api/pin/?username=Snoozer10&repo=local-youtube-automation&theme=dracula&hide_border=false&border_radius=10" width="100%" alt="local-youtube-automation pin" />
       </a>
-      <p><img src="https://img.shields.io/github/stars/Snoozer10/local-youtube-automation?style=flat-square&logo=github" alt="stars" /> <img src="https://img.shields.io/github/forks/Snoozer10/local-youtube-automation?style=flat-square" alt="forks" /></p>
+      <p align="center">
+        <img src="https://img.shields.io/github/stars/Snoozer10/local-youtube-automation?style=flat-square&logo=github" alt="stars" />
+        <img src="https://img.shields.io/github/forks/Snoozer10/local-youtube-automation?style=flat-square" alt="forks" />
+      </p>
+      <p align="center">
+        <a href="https://github.com/Snoozer10/local-youtube-automation#readme"><img src="https://img.shields.io/badge/Architecture_Docs-1A237E?style=flat-square&logo=gitbook&logoColor=white" alt="Architecture Docs" /></a>
+        <a href="https://github.com/Snoozer10/local-youtube-automation"><img src="https://img.shields.io/badge/View_Repository-282A36?style=flat-square&logo=github&logoColor=white" alt="View Repository" /></a>
+      </p>
     </td>
     <td width="50%" valign="top">
       <a href="https://github.com/Snoozer10/Snoozer10">
         <img src="https://github-stats-extended.vercel.app/api/pin/?username=Snoozer10&repo=Snoozer10&theme=dracula&hide_border=false&border_radius=10" width="100%" alt="Snoozer10 pin" />
       </a>
-      <p><img src="https://img.shields.io/github/stars/Snoozer10/Snoozer10?style=flat-square&logo=github" alt="stars" /> <img src="https://img.shields.io/github/forks/Snoozer10/Snoozer10?style=flat-square" alt="forks" /></p>
+      <p align="center">
+        <img src="https://img.shields.io/github/stars/Snoozer10/Snoozer10?style=flat-square&logo=github" alt="stars" />
+        <img src="https://img.shields.io/github/forks/Snoozer10/Snoozer10?style=flat-square" alt="forks" />
+      </p>
+      <p align="center">
+        <a href="https://github.com/Snoozer10/Snoozer10#readme"><img src="https://img.shields.io/badge/Profile_Specs-1A237E?style=flat-square&logo=gitbook&logoColor=white" alt="Profile Specs" /></a>
+        <a href="https://github.com/Snoozer10/Snoozer10"><img src="https://img.shields.io/badge/View_Repository-282A36?style=flat-square&logo=github&logoColor=white" alt="View Repository" /></a>
+      </p>
     </td>
   </tr>
 </table>
@@ -152,27 +166,30 @@ collaboration: "Open-source architectures, business workflow automation, AI inte
 <table>
   <tr>
     <td width="50%" valign="top">
-      <h4 align="center">🌐 Enterprise Cloud & Business Automation</h4>
+      <h4 align="center">🎬 Autonomous Media Pipeline & Distributed Cloud</h4>
       <p align="center">
         <img src="https://img.shields.io/badge/Architecture-Distributed-blue?style=flat-square" alt="Distributed Architecture Badge" />
         <img src="https://img.shields.io/badge/GCP-Cloud_Native-orange?style=flat-square" alt="GCP Cloud Native Badge" />
+        <a href="https://github.com/Snoozer10/local-youtube-automation#readme"><img src="https://img.shields.io/badge/Explore_Architecture_Specs-1A237E?style=flat-square&logo=gitbook&logoColor=white" alt="Explore Architecture Specs" /></a>
       </p>
-      <p>Custom infrastructure orchestration and workflow optimization bridging strategic business metrics with automated cloud deployments — proven ROI in scale & reliability.</p>
+      <p>End-to-end production automation via <code>local-youtube-automation</code> featuring a concrete 7-stage autonomous orchestration engine bridging distributed systems with zero-intervention publishing:</p>
+      <p><code>Playwright CDP Browser Orchestration</code> → <code>30/70 Linguistic Engine</code> → <code>Audacity Named-Pipes DSP</code> → <code>Zero-Drift Subtitle ASR</code> → <code>Imagen 3 Continuity</code> → <code>1440p QSV/NVENC Compositor</code></p>
       <ul>
-        <li><b>Tech Stack</b>: Python, GCP, Docker, GitHub Actions</li>
-        <li><b>Capabilities</b>: Zero-downtime CI/CD (from 98% error-free ops), SEO-driven growth (doubled rankings + 40% traffic lift), 150% e-commerce scale (POD automation)</li>
+        <li><b>Tech Stack</b>: Python, GCP, Docker, Playwright, FFmpeg, GitHub Actions</li>
+        <li><b>Capabilities & Scale</b>: Zero-downtime CI/CD (from 98% error-free ops), deterministic IPC orchestration, hardware-accelerated video compositing</li>
       </ul>
     </td>
     <td width="50%" valign="top">
-      <h4 align="center">⚡ High-Performance Reactive Web Suite</h4>
+      <h4 align="center">⚡ High-Performance Reactive Web Suite & SEO Scaling</h4>
       <p align="center">
         <img src="https://img.shields.io/badge/Frontend-Next.js_14-black?style=flat-square" alt="Next.js Badge" />
         <img src="https://img.shields.io/badge/UI-Tailwind_CSS-38B2AC?style=flat-square" alt="Tailwind CSS Badge" />
+        <a href="https://github.com/Snoozer10?tab=repositories"><img src="https://img.shields.io/badge/View_Repositories-282A36?style=flat-square&logo=github&logoColor=white" alt="View Repositories" /></a>
       </p>
-      <p>Ultra-responsive, accessible user interfaces built with modular component hierarchies and server-side rendering for optimal Core Web Vitals — 8k → 300k visitors via content systems.</p>
+      <p>Ultra-responsive, accessible web applications engineered with Next.js 14 and Tailwind CSS. Built with modular component architectures and server-side rendering for optimal Core Web Vitals and search dominance.</p>
       <ul>
-        <li><b>Tech Stack</b>: Next.js, React, TypeScript, Tailwind</li>
-        <li><b>Capabilities</b>: Dynamic SSR/SSG, WCAG 2.1 compliance, state hydration, SEO-optimized performance</li>
+        <li><b>Tech Stack</b>: Next.js 14, React, TypeScript, Tailwind CSS, Node.js</li>
+        <li><b>Capabilities & Growth</b>: Dynamic SSR/SSG, WCAG 2.1 compliance, 8k → 300k traffic lift via automated content pipelines, 150% POD sales scale, doubled search rankings (+40% organic lift)</li>
       </ul>
     </td>
   </tr>
