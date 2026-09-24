@@ -3,9 +3,15 @@
 <!-- Hero Masthead — Premium Executive Cobalt -->
 <img src="https://capsule-render.vercel.app/api?type=waving&height=220&color=gradient&customColorList=6,11,20,29&text=Hesham%20Alsoufi&fontSize=48&fontColor=fff&animation=twinkling&fontAlignY=35&desc=International%20Business%20Management%20%7C%20Full-Stack%20Cloud%20Architect&descSize=17&descAlignY=55&textBg=false" width="100%" alt="Hesham Alsoufi Header Banner" />
 
+<p align="center">
+  <a href="https://github.com/Snoozer10">
+    <img src="https://blobatar.dev/avatar/Snoozer10?background=squircle&expression=happy&size=120" width="120" height="120" alt="Hesham Alsoufi Blobatar" />
+  </a>
+</p>
+
 <!-- Dynamic Role & Value Proposition Typing SVG -->
 <a href="https://github.com/Snoozer10">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&duration=3500&pause=1200&color=00FF41&center=true&vCenter=true&width=550&lines=Building+Scalable+Cloud+Architectures;Bridging+Business+Strategy+%26+Software;Full-Stack+Engineer+%26+Tech+Innovator;Designing+High-Performance+Web+Systems" alt="Hesham Alsoufi Dynamic Typing Introduction" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&duration=3500&pause=1200&color=00FF41&center=true&vCenter=true&width=550&lines=Building+Scalable+Cloud+Architectures;Synthesizing+Autonomous+AI+Agents;Bridging+Business+Strategy+%26+Software;Full-Stack+Engineer+%26+Tech+Innovator;Designing+High-Performance+Web+Systems" alt="Hesham Alsoufi Dynamic Typing Introduction" />
 </a>
 
 <p align="center">
@@ -30,14 +36,14 @@
 ### 👨‍💻 Executive Summary & Core Focus
 
 ```yaml
-specialization: "Full-Stack Development & Enterprise Cloud Architecture"
-domain_expertise: "International Business Management & Digital Transformation"
-current_focus: "Architecting resilient distributed systems & high-throughput web apps"
-collaboration: "Open-source architectures, business workflow automation, AI integration"
+specialization: "Full-Stack Cloud Architecture & Autonomous AI Agent Systems"
+domain_expertise: "International Business Management & AST Skill Compiler Engineering"
+current_focus: "Architecting resilient distributed systems & autonomous multi-agent pipelines"
+collaboration: "Open-source agent frameworks, skill synthesis, workflow automation"
 ```
 
 - 🚀 **Growth Engine**: Launched POD platform (Shopify + Printful) **150% sales in 6 months**; healthcare blogger site **8k → 300k monthly visitors** via content systems.
-- 📈 **Scale & Reach**: **Doubled organic rankings**, **40% traffic lift**, **50+ blog posts** published, robust SEO + analytics driving measurable ROI.
+- 🤖 **AI & Agent Systems**: Architected `synthesize-skills` cross-agent framework across 8 host ecosystems; AST standards discovery, JIT context compiler (≤600t), atomic semver sync.
 - ⚙️ **Ops Excellence**: **98% error-free database** (YLDF), e-wallet banking ops, cross-functional team leadership — now applied to **zero-downtime CI/CD & cloud workflows**.
 - 🎓 **Foundation**: Bachelor International Business Administration — International University of Technology Twintech (2018-2021) | YLDF Leadership
 - 📫 **Direct Reach**: Connect on [LinkedIn](https://www.linkedin.com/in/hesham-alsoufi-b528b2259/) or [hishamahakim00@gmail.com](mailto:hishamahakim00@gmail.com) — open to collabs & hireable.
@@ -112,16 +118,16 @@ collaboration: "Open-source architectures, business workflow automation, AI inte
       </p>
     </td>
     <td width="50%" valign="top">
-      <a href="https://github.com/Snoozer10/Snoozer10">
-        <img src="https://github-stats-extended.vercel.app/api/pin/?username=Snoozer10&repo=Snoozer10&theme=dracula&hide_border=false&border_radius=10" width="100%" alt="Snoozer10 pin" />
+      <a href="https://github.com/Snoozer10/synthesize-skills">
+        <img src="https://github-stats-extended.vercel.app/api/pin/?username=Snoozer10&repo=synthesize-skills&theme=dracula&hide_border=false&border_radius=10" width="100%" alt="synthesize-skills pin" />
       </a>
       <p align="center">
-        <img src="https://img.shields.io/github/stars/Snoozer10/Snoozer10?style=flat-square&logo=github" alt="stars" />
-        <img src="https://img.shields.io/github/forks/Snoozer10/Snoozer10?style=flat-square" alt="forks" />
+        <img src="https://img.shields.io/github/stars/Snoozer10/synthesize-skills?style=flat-square&logo=github" alt="stars" />
+        <img src="https://img.shields.io/github/forks/Snoozer10/synthesize-skills?style=flat-square" alt="forks" />
       </p>
       <p align="center">
-        <a href="https://github.com/Snoozer10/Snoozer10#readme"><img src="https://img.shields.io/badge/Profile_Specs-1A237E?style=flat-square&logo=gitbook&logoColor=white" alt="Profile Specs" /></a>
-        <a href="https://github.com/Snoozer10/Snoozer10"><img src="https://img.shields.io/badge/View_Repository-282A36?style=flat-square&logo=github&logoColor=white" alt="View Repository" /></a>
+        <a href="https://github.com/Snoozer10/synthesize-skills#readme"><img src="https://img.shields.io/badge/Repository_Docs-1A237E?style=flat-square&logo=gitbook&logoColor=white" alt="Repository Docs" /></a>
+        <a href="https://github.com/Snoozer10/synthesize-skills"><img src="https://img.shields.io/badge/View_Repository-282A36?style=flat-square&logo=github&logoColor=white" alt="View Repository" /></a>
       </p>
     </td>
   </tr>
@@ -180,16 +186,17 @@ collaboration: "Open-source architectures, business workflow automation, AI inte
       </ul>
     </td>
     <td width="50%" valign="top">
-      <h4 align="center">⚡ High-Performance Reactive Web Suite & SEO Scaling</h4>
+      <h4 align="center">🤖 Autonomous AI-Agent Skills & Context Federation</h4>
       <p align="center">
-        <img src="https://img.shields.io/badge/Frontend-Next.js_14-black?style=flat-square" alt="Next.js Badge" />
-        <img src="https://img.shields.io/badge/UI-Tailwind_CSS-38B2AC?style=flat-square" alt="Tailwind CSS Badge" />
-        <a href="https://github.com/Snoozer10?tab=repositories"><img src="https://img.shields.io/badge/View_Repositories-282A36?style=flat-square&logo=github&logoColor=white" alt="View Repositories" /></a>
+        <img src="https://img.shields.io/badge/AI_Agents-Multi--Ecosystem-9C27B0?style=flat-square" alt="AI Agents Badge" />
+        <img src="https://img.shields.io/badge/Architecture-AST_Compiler-00BCD4?style=flat-square" alt="AST Compiler Badge" />
+        <a href="https://github.com/Snoozer10/synthesize-skills#readme"><img src="https://img.shields.io/badge/Explore_Skill_Specs-1A237E?style=flat-square&logo=gitbook&logoColor=white" alt="Explore Skill Specs" /></a>
       </p>
-      <p>Ultra-responsive, accessible web applications engineered with Next.js 14 and Tailwind CSS. Built with modular component architectures and server-side rendering for optimal Core Web Vitals and search dominance.</p>
+      <p>Standardized framework and compiler suite via <code>synthesize-skills</code> authoring, validating, and installing high-reliability AI-agent capabilities across 8 agent host environments:</p>
+      <p><code>AST Pattern Extractor</code> → <code>JIT Context Bounding (≤600t)</code> → <code>VCS Reality-Sync Daemon</code> → <code>Blast Radius Engine</code> → <code>Atomic Semver Parity Gate</code></p>
       <ul>
-        <li><b>Tech Stack</b>: Next.js 14, React, TypeScript, Tailwind CSS, Node.js</li>
-        <li><b>Capabilities & Growth</b>: Dynamic SSR/SSG, WCAG 2.1 compliance, 8k → 300k traffic lift via automated content pipelines, 150% POD sales scale, doubled search rankings (+40% organic lift)</li>
+        <li><b>Tech Stack</b>: Python 3.11+, AST Parsers, TypeScript, YAML, GitHub Actions</li>
+        <li><b>Capabilities & Scale</b>: Deterministic skill scaffolding, red-green-refactor acceptance testing, 8-host multi-agent cross-compilation</li>
       </ul>
     </td>
   </tr>
