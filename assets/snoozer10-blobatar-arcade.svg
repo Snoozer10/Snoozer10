@@ -1,0 +1,133 @@
+<svg id="blobatar-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%">
+  <style>
+    /* CSS animations */
+    @keyframes floatingBob {
+      0%, 100% { transform: translateY(-7px); }
+      50% { transform: translateY(5px); }
+    }
+    @keyframes breathing {
+      0%, 100% { transform: scale(0.97, 1.03); }
+      50% { transform: scale(1.03, 0.96); }
+    }
+    @keyframes groundRipple {
+      0%, 100% { transform: scale(0.84); opacity: 0.35; }
+      50% { transform: scale(1.18); opacity: 0.9; }
+    }
+    @keyframes rotateClockwise {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    @keyframes rotateCounter {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(-360deg); }
+    }
+    @keyframes blink {
+      0%, 4%, 100% { transform: scaleY(1); }
+      2%, 3% { transform: scaleY(0.1); }
+    }
+    @keyframes saccade {
+      0%, 16% { transform: translate(0, 0); }
+      19%, 35% { transform: translate(-3.2px, -0.6px); }
+      38%, 52% { transform: translate(3.2px, -1.8px); }
+      55%, 68% { transform: translate(0.4px, 2.0px); }
+      71%, 83% { transform: translate(3.5px, 0.2px); }
+      86%, 96% { transform: translate(-1.0px, -0.4px); }
+      100% { transform: translate(0, 0); }
+    }
+    @keyframes beaconPulse {
+      0% { fill: #44475A; }
+      50% { fill: #00FF41; }
+      100% { fill: #44475A; }
+    }
+    @keyframes beaconWave {
+      0% { transform: scale(1); opacity: 0.8; }
+      100% { transform: scale(3); opacity: 0; }
+    }
+    @keyframes scannerSweep {
+      0% { transform: translateX(0); }
+      50% { transform: translateX(180px); }
+      100% { transform: translateX(0); }
+    }
+
+    .bg { fill: #282A36; rx: 16px; ry: 16px; }
+    .surface { fill: #44475A; }
+    .primary { fill: #00FF41; }
+    .cobalt-deep { fill: #1A237E; }
+    .cobalt-mid { fill: #3949AB; }
+    .fg { fill: #F8F8F2; font-family: monospace; font-size: 10px; font-weight: bold; }
+
+    .bob-group { animation: floatingBob 4s ease-in-out infinite; transform-origin: center; }
+    .breathe-group { animation: breathing 4s ease-in-out infinite; transform-origin: 50.43px 89.32px; }
+    
+    .ripple { animation: groundRipple 4s ease-in-out infinite; transform-origin: 50.43px 105px; fill: #44475A; }
+    
+    .orbit-cw { animation: rotateClockwise 16s linear infinite; transform-origin: 100px 100px; }
+    .orbit-ccw { animation: rotateCounter 24s linear infinite; transform-origin: 100px 100px; }
+    
+    .eyes-saccade { animation: saccade 9.6s cubic-bezier(0.25, 1, 0.5, 1) infinite; }
+    .eye-blink { animation: blink 4.8s infinite; transform-origin: 50px 50px; }
+    
+    .beacon { animation: beaconPulse 1.8s infinite; }
+    .beacon-wave { animation: beaconWave 1.8s infinite; transform-origin: 180px 20px; }
+    
+    .scanner-pip { animation: scannerSweep 3.2s ease-in-out infinite; }
+    
+    /* Disable saccade when overriden */
+    .disable-saccade { animation: none !important; }
+  </style>
+
+  <!-- Background -->
+  <rect class="bg" width="200" height="200" />
+  
+  <!-- Arcade corner reticles -->
+  <path d="M10 30 L10 10 L30 10" fill="none" stroke="#00FF41" stroke-width="2" />
+  <path d="M190 30 L190 10 L170 10" fill="none" stroke="#00FF41" stroke-width="2" />
+  <path d="M10 170 L10 190 L30 190" fill="none" stroke="#00FF41" stroke-width="2" />
+  <path d="M190 170 L190 190 L170 190" fill="none" stroke="#00FF41" stroke-width="2" />
+
+  <!-- Orbit rings -->
+  <g class="orbit-ccw">
+    <circle cx="100" cy="100" r="70" fill="none" stroke="#3949AB" stroke-width="1" stroke-dasharray="4 4" />
+  </g>
+  <g class="orbit-cw">
+    <circle cx="100" cy="100" r="85" fill="none" stroke="#1A237E" stroke-width="2" stroke-dasharray="20 10 5 10" />
+    <circle cx="15" cy="100" r="3" class="primary" /> <!-- sensor blip -->
+  </g>
+
+  <!-- Ground energy ripple -->
+  <ellipse cx="100" cy="150" rx="40" ry="10" class="ripple" />
+
+  <!-- Central Blobatar Group -->
+  <g transform="translate(50, 45)">
+    <g class="bob-group">
+      <g class="breathe-group">
+        <!-- Body -->
+        <path d="M85.99 51.49C85.99 77.06 74.46 89.32 50.43 89.32C26.39 89.32 14.86 77.06 14.86 51.49C14.86 25.92 26.39 13.66 50.43 13.66C74.46 13.66 85.99 25.92 85.99 51.49Z" fill="#8ae2e8" />
+        
+        <!-- Eyes -->
+        <g id="eyes-group" class="eyes-saccade">
+          <g class="eye-blink">
+            <!-- Left eye -->
+            <path d="M46.42 49.42C46.71 51.47 46.08 51.82 40.71 52.57C35.34 53.33 34.63 53.17 34.34 51.11C34.05 49.06 34.69 48.71 40.06 47.96C45.43 47.2 46.13 47.37 46.42 49.42Z" fill="#051213" />
+            <!-- Right eye -->
+            <path d="M70.23 49.97C70.59 52.54 69.96 52.96 64.52 53.72C59.08 54.48 58.35 54.26 57.99 51.69C57.63 49.12 58.26 48.7 63.7 47.94C69.14 47.17 69.87 47.4 70.23 49.97Z" fill="#051213" />
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+
+  <!-- SYS:ONLINE pulsing beacon -->
+  <circle cx="180" cy="20" r="10" class="beacon-wave" fill="none" stroke="#00FF41" stroke-width="1" />
+  <circle cx="180" cy="20" r="4" class="beacon" />
+  <text x="135" y="23" class="fg" fill="#00FF41">SYS:ON</text>
+
+  <!-- Telemetry scanner line -->
+  <g transform="translate(10, 180)">
+    <line x1="0" y1="0" x2="180" y2="0" stroke="#3949AB" stroke-width="2" opacity="0.5"/>
+    <circle cx="0" cy="0" r="3" class="primary scanner-pip" />
+  </g>
+
+  <!-- Footer label -->
+  <text x="10" y="195" class="fg">SNOOZER10 // ARCADE HUD</text>
+</svg>

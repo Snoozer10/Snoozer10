@@ -6,4 +6,6 @@ assert "readme-typing-svg.demolab.com" in md, "typing SVG missing"
 assert "Fira+Code" in md and "Building+Scalable+Cloud+Architectures" in md, "typing lines missing"
 assert md.count("img.shields.io/badge/LinkedIn") >= 1
 assert "customColorList=6,11,20,29" in md
+assert "snoozer10-blobatar-arcade.svg" in md, "blobatar arcade SVG missing"
+assert 'alt="Hesham Alsoufi Animated Blobatar Arcade"' in md, "blobatar alt text missing"
 print("masthead OK")

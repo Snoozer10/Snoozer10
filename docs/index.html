@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Snoozer10 // ARCADE HUD</title>
+  <style>
+    :root {
+      --bg: #282A36;
+      --surface: #44475A;
+      --fg: #F8F8F2;
+      --primary: #00FF41;
+      --cobalt-deep: #1A237E;
+      --cobalt-mid: #3949AB;
+      --radius: 16px;
+    }
+    
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #111;
+      color: var(--fg);
+      font-family: monospace;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      overflow: hidden;
+      /* CRT scanline background */
+      background: linear-gradient(
+          rgba(18, 16, 16, 0) 50%, 
+          rgba(0, 0, 0, 0.25) 50%
+        ), 
+        linear-gradient(
+          90deg, 
+          rgba(255, 0, 0, 0.06), 
+          rgba(0, 255, 0, 0.02), 
+          rgba(0, 0, 255, 0.06)
+        );
+      background-size: 100% 4px, 6px 100%;
+    }
+    
+    /* CRT subtle flicker */
+    body::before {
+      content: " ";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      background: linear-gradient(
+        rgba(18, 16, 16, 0) 50%,
+        rgba(0, 0, 0, 0.25) 50%
+      );
+      background-size: 100% 4px;
+      z-index: 100;
+      pointer-events: none;
+      animation: flicker 0.15s infinite;
+      opacity: 0.1;
+    }
+
+    @keyframes flicker {
+      0% { opacity: 0.1; }
+      50% { opacity: 0.15; }
+      100% { opacity: 0.1; }
+    }
+
+    .hud-container {
+      background-color: var(--bg);
+      border-radius: var(--radius);
+      padding: 20px;
+      box-shadow: 0 0 30px rgba(0, 255, 65, 0.2), inset 0 0 20px rgba(0,0,0,0.5);
+      border: 2px solid var(--surface);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      position: relative;
+      z-index: 10;
+    }
+
+    .svg-container {
+      width: 300px;
+      height: 300px;
+      position: relative;
+      background: var(--bg);
+      border-radius: 8px;
+      overflow: hidden;
+      cursor: pointer;
+      transition: transform 0.2s cubic-bezier(0.25, 1, 0.5, 1);
+    }
+    
+    .svg-container.squish {
+      transform: scale(1.1, 0.9);
+    }
+
+    .svg-container svg {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+
+    .controls {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      width: 100%;
+      border-top: 1px dashed var(--surface);
+      padding-top: 15px;
+    }
+
+    .btn-group {
+      display: flex;
+      gap: 10px;
+      width: 100%;
+    }
+
+    .btn {
+      flex: 1;
+      background: transparent;
+      color: var(--primary);
+      border: 1px solid var(--primary);
+      padding: 8px 12px;
+      font-family: monospace;
+      font-size: 12px;
+      cursor: pointer;
+      text-transform: uppercase;
+      transition: all 0.2s;
+      border-radius: 4px;
+      text-align: center;
+    }
+
+    .btn:hover {
+      background: rgba(0, 255, 65, 0.15);
+      box-shadow: 0 0 10px rgba(0, 255, 65, 0.3);
+    }
+
+    .btn.active {
+      background: var(--primary);
+      color: #000;
+      box-shadow: 0 0 15px rgba(0, 255, 65, 0.4);
+    }
+
+    .slider-group {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 12px;
+      color: var(--fg);
+    }
+
+    .slider-group input {
+      flex: 1;
+      margin-left: 10px;
+      accent-color: var(--primary);
+    }
+
+    .status-panel {
+      font-size: 12px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+      width: 100%;
+      color: #aaa;
+      background: #111;
+      padding: 10px;
+      border-radius: 4px;
+      border: 1px solid var(--surface);
+    }
+
+    .val {
+      color: var(--primary);
+      text-shadow: 0 0 5px rgba(0,255,65,0.5);
+    }
+
+    .link {
+      color: var(--cobalt-mid);
+      text-decoration: none;
+      margin-top: 5px;
+      font-size: 12px;
+      text-align: center;
+      display: block;
+    }
+    
+    .link:hover {
+      text-decoration: underline;
+      color: var(--primary);
+      text-shadow: 0 0 5px rgba(0,255,65,0.5);
+    }
+
+    /* Embedded SVG Styles */
+    @keyframes floatingBob {
+      0%, 100% { transform: translateY(-7px); }
+      50% { transform: translateY(5px); }
+    }
+    @keyframes breathing {
+      0%, 100% { transform: scale(0.97, 1.03); }
+      50% { transform: scale(1.03, 0.96); }
+    }
+    @keyframes groundRipple {
+      0%, 100% { transform: scale(0.84); opacity: 0.35; }
+      50% { transform: scale(1.18); opacity: 0.9; }
+    }
+    @keyframes rotateClockwise {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    @keyframes rotateCounter {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(-360deg); }
+    }
+    @keyframes blink {
+      0%, 4%, 100% { transform: scaleY(1); }
+      2%, 3% { transform: scaleY(0.1); }
+    }
+    @keyframes saccade {
+      0%, 16% { transform: translate(0, 0); }
+      19%, 35% { transform: translate(-3.2px, -0.6px); }
+      38%, 52% { transform: translate(3.2px, -1.8px); }
+      55%, 68% { transform: translate(0.4px, 2.0px); }
+      71%, 83% { transform: translate(3.5px, 0.2px); }
+      86%, 96% { transform: translate(-1.0px, -0.4px); }
+      100% { transform: translate(0, 0); }
+    }
+    @keyframes beaconPulse {
+      0% { fill: var(--surface); }
+      50% { fill: var(--primary); }
+      100% { fill: var(--surface); }
+    }
+    @keyframes beaconWave {
+      0% { transform: scale(1); opacity: 0.8; }
+      100% { transform: scale(3); opacity: 0; }
+    }
+    @keyframes scannerSweep {
+      0% { transform: translateX(0); }
+      50% { transform: translateX(180px); }
+      100% { transform: translateX(0); }
+    }
+
+    .bg-shape { fill: var(--bg); rx: 16px; ry: 16px; }
+    .surface-shape { fill: var(--surface); }
+    .primary-fill { fill: var(--primary); }
+    .cobalt-deep-fill { fill: var(--cobalt-deep); }
+    .cobalt-mid-fill { fill: var(--cobalt-mid); }
+    .fg-text { fill: var(--fg); font-family: monospace; font-size: 10px; font-weight: bold; }
+
+    .bob-group { animation: floatingBob 4s ease-in-out infinite; transform-origin: center; }
+    .breathe-group { animation: breathing 4s ease-in-out infinite; transform-origin: 50.43px 89.32px; }
+    
+    .ripple { animation: groundRipple 4s ease-in-out infinite; transform-origin: 50.43px 105px; fill: var(--surface); }
+    
+    .orbit-cw { animation: rotateClockwise 16s linear infinite; transform-origin: 100px 100px; }
+    .orbit-ccw { animation: rotateCounter 24s linear infinite; transform-origin: 100px 100px; }
+    
+    .eyes-saccade { animation: saccade 9.6s cubic-bezier(0.25, 1, 0.5, 1) infinite; transition: transform 0.1s; }
+    .eyes-manual { animation: none !important; transition: transform 0.15s ease-out; }
+    .eye-blink { animation: blink 4.8s infinite; transform-origin: 50px 50px; }
+    .eye-wink { animation: none !important; transform: scaleY(0.1); transition: transform 0.1s; transform-origin: 50px 50px; }
+    
+    .beacon { animation: beaconPulse 1.8s infinite; }
+    .beacon-wave { animation: beaconWave 1.8s infinite; transform-origin: 180px 20px; }
+    
+    .scanner-pip { animation: scannerSweep 3.2s ease-in-out infinite; }
+  </style>
+</head>
+<body>
+
+  <div class="hud-container">
+    <div class="svg-container" id="avatar-container">
+      <svg id="blobatar-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%">
+        <!-- Background -->
+        <rect class="bg-shape" width="200" height="200" />
+        
+        <!-- Arcade corner reticles -->
+        <path d="M10 30 L10 10 L30 10" fill="none" stroke="var(--primary)" stroke-width="2" />
+        <path d="M190 30 L190 10 L170 10" fill="none" stroke="var(--primary)" stroke-width="2" />
+        <path d="M10 170 L10 190 L30 190" fill="none" stroke="var(--primary)" stroke-width="2" />
+        <path d="M190 170 L190 190 L170 190" fill="none" stroke="var(--primary)" stroke-width="2" />
+
+        <!-- Orbit rings -->
+        <g class="orbit-ccw">
+          <circle cx="100" cy="100" r="70" fill="none" stroke="var(--cobalt-mid)" stroke-width="1" stroke-dasharray="4 4" />
+        </g>
+        <g class="orbit-cw">
+          <circle cx="100" cy="100" r="85" fill="none" stroke="var(--cobalt-deep)" stroke-width="2" stroke-dasharray="20 10 5 10" />
+          <circle cx="15" cy="100" r="3" class="primary-fill" />
+        </g>
+
+        <!-- Ground energy ripple -->
+        <ellipse cx="100" cy="150" rx="40" ry="10" class="ripple" />
+
+        <!-- Central Blobatar Group -->
+        <g transform="translate(50, 45)">
+          <g class="bob-group">
+            <g class="breathe-group">
+              <!-- Body -->
+              <path d="M85.99 51.49C85.99 77.06 74.46 89.32 50.43 89.32C26.39 89.32 14.86 77.06 14.86 51.49C14.86 25.92 26.39 13.66 50.43 13.66C74.46 13.66 85.99 25.92 85.99 51.49Z" fill="#8ae2e8" />
+              
+              <!-- Eyes -->
+              <g id="eyes-group" class="eyes-manual">
+                <g class="eye-blink" id="eyes-blink-group">
+                  <path d="M46.42 49.42C46.71 51.47 46.08 51.82 40.71 52.57C35.34 53.33 34.63 53.17 34.34 51.11C34.05 49.06 34.69 48.71 40.06 47.96C45.43 47.2 46.13 47.37 46.42 49.42Z" fill="#051213" />
+                  <path d="M70.23 49.97C70.59 52.54 69.96 52.96 64.52 53.72C59.08 54.48 58.35 54.26 57.99 51.69C57.63 49.12 58.26 48.7 63.7 47.94C69.14 47.17 69.87 47.4 70.23 49.97Z" fill="#051213" />
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+
+        <!-- SYS:ONLINE pulsing beacon -->
+        <circle cx="180" cy="20" r="10" class="beacon-wave" fill="none" stroke="var(--primary)" stroke-width="1" />
+        <circle cx="180" cy="20" r="4" class="beacon" />
+        <text x="135" y="23" class="fg-text" fill="var(--primary)">SYS:ON</text>
+
+        <!-- Telemetry scanner line -->
+        <g transform="translate(10, 180)">
+          <line x1="0" y1="0" x2="180" y2="0" stroke="var(--cobalt-mid)" stroke-width="2" opacity="0.5"/>
+          <circle cx="0" cy="0" r="3" class="primary-fill scanner-pip" />
+        </g>
+
+        <!-- Footer label -->
+        <text x="10" y="195" class="fg-text">SNOOZER10 // ARCADE HUD</text>
+      </svg>
+    </div>
+
+    <div class="controls">
+      <div class="btn-group">
+        <button id="mode-btn" class="btn active">Live Tracking</button>
+        <button id="mute-btn" class="btn">Mute Audio</button>
+      </div>
+      
+      <div class="slider-group">
+        <label for="sens-slider">SENSITIVITY:</label>
+        <input type="range" id="sens-slider" min="1" max="10" value="4">
+      </div>
+
+      <div class="status-panel">
+        <div>CURSOR: <span id="cursor-val" class="val">---, ---</span></div>
+        <div>VECTOR: <span id="vector-val" class="val">---°</span></div>
+        <div>DELTA: <span id="delta-val" class="val">---</span></div>
+        <div>MODE: <span id="mode-val" class="val">TRACKING</span></div>
+      </div>
+
+      <a href="https://github.com/Snoozer10" class="link" target="_blank">github.com/Snoozer10 &rarr;</a>
+    </div>
+  </div>
+
+  <script>
+    const modeBtn = document.getElementById('mode-btn');
+    const muteBtn = document.getElementById('mute-btn');
+    const sensSlider = document.getElementById('sens-slider');
+    const eyesGroup = document.getElementById('eyes-group');
+    const eyesBlinkGroup = document.getElementById('eyes-blink-group');
+    const avatarContainer = document.getElementById('avatar-container');
+    const cursorVal = document.getElementById('cursor-val');
+    const vectorVal = document.getElementById('vector-val');
+    const deltaVal = document.getElementById('delta-val');
+    const modeVal = document.getElementById('mode-val');
+
+    // Default to Live Mouse Tracking ON
+    let isLiveTracking = true;
+    let isMuted = false;
+    let targetX = 0;
+    let targetY = 0;
+    let currentX = 0;
+    let currentY = 0;
+    let sensitivity = 0.04;
+    
+    // Spring physics constants
+    const spring = 0.15;
+    const friction = 0.8;
+    let velX = 0;
+    let velY = 0;
+
+    // Web Audio API setup
+    const AudioContext = window.AudioContext || window.webkitAudioContext;
+    let audioCtx;
+    
+    function initAudio() {
+      if (!audioCtx) {
+        audioCtx = new AudioContext();
+      }
+      if (audioCtx.state === 'suspended') {
+        audioCtx.resume();
+      }
+    }
+
+    function playBlip() {
+      if (isMuted) return;
+      initAudio();
+      
+      const osc = audioCtx.createOscillator();
+      const gainNode = audioCtx.createGain();
+      
+      osc.type = 'square';
+      osc.frequency.setValueAtTime(440, audioCtx.currentTime); // A4
+      osc.frequency.exponentialRampToValueAtTime(880, audioCtx.currentTime + 0.1); // Chirp up
+      
+      gainNode.gain.setValueAtTime(0.1, audioCtx.currentTime);
+      gainNode.gain.exponentialRampToValueAtTime(0.01, audioCtx.currentTime + 0.1);
+      
+      osc.connect(gainNode);
+      gainNode.connect(audioCtx.destination);
+      
+      osc.start();
+      osc.stop(audioCtx.currentTime + 0.1);
+    }
+
+    modeBtn.addEventListener('click', () => {
+      isLiveTracking = !isLiveTracking;
+      if (isLiveTracking) {
+        modeBtn.classList.add('active');
+        eyesGroup.classList.remove('eyes-saccade');
+        eyesGroup.classList.add('eyes-manual');
+        modeVal.textContent = 'TRACKING';
+      } else {
+        modeBtn.classList.remove('active');
+        eyesGroup.classList.remove('eyes-manual');
+        eyesGroup.classList.add('eyes-saccade');
+        eyesGroup.style.transform = '';
+        modeVal.textContent = 'SACCADE';
+        cursorVal.textContent = '---, ---';
+        vectorVal.textContent = '---°';
+        deltaVal.textContent = '---';
+      }
+    });
+
+    muteBtn.addEventListener('click', () => {
+      isMuted = !isMuted;
+      if (isMuted) {
+        muteBtn.classList.add('active');
+        muteBtn.textContent = 'Unmute Audio';
+      } else {
+        muteBtn.classList.remove('active');
+        muteBtn.textContent = 'Mute Audio';
+        playBlip(); // play test sound on unmute
+      }
+    });
+    
+    sensSlider.addEventListener('input', (e) => {
+      sensitivity = e.target.value * 0.01;
+    });
+
+    // Handle interactions (squish and wink/morph)
+    avatarContainer.addEventListener('mousedown', triggerInteraction);
+    avatarContainer.addEventListener('touchstart', (e) => {
+      e.preventDefault(); // prevent mouse emulation
+      triggerInteraction();
+      updateTargetPosition(e.touches[0].clientX, e.touches[0].clientY);
+    }, {passive: false});
+    
+    function triggerInteraction() {
+      playBlip();
+      
+      // Squish animation
+      avatarContainer.classList.add('squish');
+      setTimeout(() => {
+        avatarContainer.classList.remove('squish');
+      }, 150);
+      
+      // Wink/morph expression
+      eyesBlinkGroup.classList.remove('eye-blink');
+      eyesBlinkGroup.classList.add('eye-wink');
+      setTimeout(() => {
+        eyesBlinkGroup.classList.remove('eye-wink');
+        eyesBlinkGroup.classList.add('eye-blink');
+      }, 300);
+    }
+
+    function updateTargetPosition(clientX, clientY) {
+      if (!isLiveTracking) return;
+
+      const rect = avatarContainer.getBoundingClientRect();
+      const centerX = rect.left + rect.width / 2;
+      const centerY = rect.top + rect.height / 2;
+
+      cursorVal.textContent = `${Math.round(clientX)}, ${Math.round(clientY)}`;
+
+      const dx = clientX - centerX;
+      const dy = clientY - centerY;
+      
+      const distance = Math.hypot(dx, dy);
+      deltaVal.textContent = Math.round(distance);
+
+      const angle = Math.atan2(dy, dx);
+      vectorVal.textContent = `${Math.round(angle * 180 / Math.PI)}°`;
+
+      // New smooth tracking physics
+      const moveDist = Math.min(8, distance * sensitivity);
+      targetX = Math.cos(angle) * moveDist;
+      targetY = Math.sin(angle) * moveDist;
+    }
+
+    document.addEventListener('mousemove', (e) => {
+      updateTargetPosition(e.clientX, e.clientY);
+    });
+    
+    document.addEventListener('touchmove', (e) => {
+      updateTargetPosition(e.touches[0].clientX, e.touches[0].clientY);
+    });
+
+    // Animation loop for spring physics
+    function animate() {
+      if (isLiveTracking) {
+        const ax = (targetX - currentX) * spring;
+        const ay = (targetY - currentY) * spring;
+        
+        velX += ax;
+        velY += ay;
+        
+        velX *= friction;
+        velY *= friction;
+        
+        currentX += velX;
+        currentY += velY;
+        
+        eyesGroup.style.transform = `translate(${currentX}px, ${currentY}px)`;
+      }
+      requestAnimationFrame(animate);
+    }
+    
+    animate();
+
+  </script>
+</body>
+</html>

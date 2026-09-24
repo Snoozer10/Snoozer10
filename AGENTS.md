@@ -107,7 +107,7 @@ When the user requests a durable behavior change, record it here or in the relev
 
 ## Commands & Verification
 
-Run all seven checks from repo root after ANY README / DESIGN.md / verify change (stdlib-only Python 3, zero deps):
+Run all eight checks from repo root after ANY README / DESIGN.md / verify change (stdlib-only Python 3, zero deps):
 
 ```
 python verify/masthead_check.py

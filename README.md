@@ -4,8 +4,8 @@
 <img src="https://capsule-render.vercel.app/api?type=waving&height=220&color=gradient&customColorList=6,11,20,29&text=Hesham%20Alsoufi&fontSize=48&fontColor=fff&animation=twinkling&fontAlignY=35&desc=International%20Business%20Management%20%7C%20Full-Stack%20Cloud%20Architect&descSize=17&descAlignY=55&textBg=false" width="100%" alt="Hesham Alsoufi Header Banner" />
 
 <p align="center">
-  <a href="https://github.com/Snoozer10">
-    <img src="https://blobatar.dev/avatar/Snoozer10?background=squircle&expression=happy&size=120" width="120" height="120" alt="Hesham Alsoufi Blobatar" />
+  <a href="https://snoozer10.github.io/Snoozer10/" title="Click to launch Interactive Mouse-Tracking Blobatar Arcade">
+    <img src="assets/snoozer10-blobatar-arcade.svg" width="140" height="140" alt="Hesham Alsoufi Animated Blobatar Arcade" />
   </a>
 </p>
 

@@ -4,3 +4,4 @@ verify/__pycache__/
 .docs/design_preview.html
 verify_url_check.py
 *.log
+.serena/

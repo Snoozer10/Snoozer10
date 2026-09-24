@@ -31,6 +31,9 @@ spacing:
   md: 16px
   lg: 32px
 components:
+  avatar-arcade:
+    backgroundColor: "{colors.background}"
+    rounded: "{rounded.lg}"
   masthead-banner:
     backgroundColor: "{colors.cobalt-deep}"
     textColor: "{colors.white}"
@@ -120,6 +123,7 @@ Radius ladder: **sm 10px** (stat cards), **md 12px**, **lg 16px** (activity grap
 
 | Component | Background | Text/Glyph | Radius | Notes |
 | :-- | :-- | :-- | :-- | :-- |
+| `avatar-arcade` | `{colors.background}` | `{colors.foreground}` | `{rounded.lg}` | vector animated HUD, blobatar mascot, live/autonomous gaze |
 | `masthead-banner` | `{colors.cobalt-deep}` gradient wave | `{colors.white}` | 0 | capsule-render, twinkling |
 | `typing-intro` | transparent | `{colors.primary}` | — | Fira Code 600, rotating lines |
 | `social-badge-*` | brand chip colors | shields.io default white | pill | LinkedIn / Discord / Gmail / Sponsor |

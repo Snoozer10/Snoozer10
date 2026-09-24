@@ -26,7 +26,7 @@
 
 ## Verification
 
-Run all seven from repo root after any README, DESIGN.md, or verify/ edit:
+Run all eight from repo root after any README, DESIGN.md, or verify/ edit:
 
 ```
 python verify/masthead_check.py
@@ -39,7 +39,7 @@ python verify/workflow_check.py
 python verify/final_check.py
 ```
 
-All seven must print OK; any traceback fails the change. DESIGN.md additionally lints clean via:
+All eight must print OK; any traceback fails the change. DESIGN.md additionally lints clean via:
 
 ```
 npx -y -p "@google/design.md" designmd lint DESIGN.md
